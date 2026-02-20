@@ -1,3 +1,8 @@
+header .header-text h1 {
+  font-weight: 400; /* normal, not bold */
+  font-family: "Libre Baskerville", serif;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   margin: 0;
