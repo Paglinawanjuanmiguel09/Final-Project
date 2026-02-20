@@ -183,3 +183,65 @@ footer {
   background-color: #333;
 }
 
+/* ===== Page 3 ===== */
+
+.box {
+  width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.redtext {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: gray;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.redtext:not(:placeholder-shown) {
+  color: #AA0000;
+}
+
+.dropdown.redtext option[value=""] {
+  color: gray;
+}
+
+.dropdown.redtext:valid {
+  color: #AA0000;
+}
+
+input.redtext:hover,
+select.redtext:hover,
+textarea.redtext:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.submitbtn {
+  background-color: #AA0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.submitbtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  background-color: #28a745; 
+}
+
+footer span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.95em;
+}
+
