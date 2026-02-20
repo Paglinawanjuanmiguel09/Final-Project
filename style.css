@@ -187,13 +187,21 @@ footer {
 
 /* ===== Page 3 ===== */
 
+/* Make form box responsive */
 .box {
-  width: 600px;
+  width: 90%;
+  max-width: 600px;
   margin: 50px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Make inputs responsive inside the box */
+.box input,
+.box select,
+.box textarea {
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in width */
 }
 
 .redtext {
