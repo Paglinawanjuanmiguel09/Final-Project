@@ -246,7 +246,6 @@ footer span {
   margin-top: 5px;
   font-size: 0.95em;
 }
-
 #ApplicationContact .box {
   width: 90%;        
   max-width: 600px;  
@@ -259,7 +258,6 @@ footer span {
 #ApplicationContact textarea.redtext {
   box-sizing: border-box; 
 }
-
 @media (max-width: 480px) {
   #ApplicationContact .box {
     margin: 30px 10px;
