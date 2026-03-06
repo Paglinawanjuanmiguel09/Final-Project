@@ -93,13 +93,21 @@ section {
   text-align: left;
 }
 
-.mv-box {
-  flex: 1;
-  background: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+.mv-box{
+  flex:1;
+  background:white;
+  padding:15px;
+  border-radius:8px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.mv-box:hover{
+  transform:translateY(-8px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+
 
 .mv-box h3 {
   color: #AA0000;
