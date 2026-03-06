@@ -334,7 +334,7 @@ footer span {
   to{transform:rotate(360deg);}
 }
 
-/* ===== backtotop button ===== */
+/* ===== backtotop===== */
 #backToTop{
   position:fixed;
   bottom:40px;
@@ -377,7 +377,6 @@ footer span {
   transform:scale(1.05);
 }
 
-/* Dark Mode Styles */
 body.dark-mode{
   background-color:#222;
   color:#eee;
