@@ -3,6 +3,17 @@ window.addEventListener("load", function() {
   if(loader){ 
     loader.style.display = "none"; 
   } 
+
+  /* ===== darkmode button ===== */ 
+  const themeToggle = document.createElement("button"); 
+  themeToggle.id = "themeToggle"; 
+  themeToggle.textContent = "Dark Mode"; 
+  document.body.appendChild(themeToggle); 
+
+  themeToggle.addEventListener("click", () => { 
+    document.body.classList.toggle("dark-mode"); 
+    themeToggle.textContent = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode"; 
+  });
 });
 
 /* ===== backtotop ===== */ 
@@ -39,15 +50,4 @@ window.addEventListener("scroll", () => {
       link.classList.add("active"); 
     } 
   }); 
-});
-
-/* ===== darkmode btton ===== */ 
-const themeToggle = document.createElement("button"); 
-themeToggle.id = "themeToggle"; 
-themeToggle.textContent = "Dark Mode"; 
-document.body.appendChild(themeToggle); 
-
-themeToggle.addEventListener("click", () => { 
-  document.body.classList.toggle("dark-mode"); 
-  themeToggle.textContent = document.body.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode"; 
 });
