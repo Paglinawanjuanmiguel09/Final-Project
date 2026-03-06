@@ -1,7 +1,7 @@
-window.addEventListener("load", function(){
+window.addEventListener("load", function() {
   const loader = document.getElementById("loader");
 
-  setTimeout(function(){
+  if(loader){
     loader.style.display = "none";
-  }, 800);
+  }
 });
