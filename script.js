@@ -21,7 +21,13 @@ backToTop.addEventListener("click", () => {
   window.scrollTo({top:0, behavior:"smooth"});
 });
 
-/* ===== nav highlight ===== */
+/* ===== highlight ===== */
+
+navLinks.forEach(link => {
+  if(link.href === window.location.href){
+    link.classList.add("active");
+  }
+});
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
 
