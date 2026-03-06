@@ -4,7 +4,7 @@ window.addEventListener("load", function() {
     loader.style.display = "none"; 
   } 
 
-  /* ===== darkmode button ===== */ 
+  /* ===== darkmode ===== */ 
   const themeToggle = document.createElement("button"); 
   themeToggle.id = "themeToggle"; 
   themeToggle.textContent = "Dark Mode"; 
@@ -31,7 +31,7 @@ backToTop.addEventListener("click", () => {
   window.scrollTo({top:0, behavior:"smooth"}); 
 });
 
-/* ===== nav highlight ===== */ 
+/* ===== navbar hlight===== */ 
 const sections = document.querySelectorAll("section"); 
 const navLinks = document.querySelectorAll("nav ul li a"); 
 
